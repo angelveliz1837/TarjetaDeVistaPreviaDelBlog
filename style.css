@@ -1,0 +1,127 @@
+body{
+    background: hsl(47, 88%, 63%);
+    width: 1440px;
+}
+
+.flex-container{
+    max-width: 40%;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: "Figtree", sans-serif;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    10px 10px 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+    .caja img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .boton{
+        display:inline;
+        text-align: center;
+        background: hsl(47, 88%, 63%);
+        border-radius: 10px;
+        margin: 25px 450px 25px 0px;
+        font-weight: bold;
+        padding: 10px 0px;
+        font-size: 1.3em;
+    }
+
+    .caja .titulo{
+        font-size: 2.5em;
+    }
+
+    .caja .texto1, .caja .texto2{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .caja .texto1{
+        color: hsl(0, 0%, 7%);
+        font-size: 1.4em;
+    }
+
+    .caja .texto2{
+        color: hsl(0, 0%, 42%);
+        font-size: 1.6em;
+        padding-bottom: 40px;
+    }
+
+    .c1{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .c1 .icono{
+        width: 10%;
+    }
+
+    .c1 .texto3{
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+@media screen and (max-width: 550px){
+    body{
+        width: 315px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    .flex-container{
+        max-width: 315px;
+    }
+
+    .caja{
+        width: 100%;
+    }
+
+        .boton{
+            margin: 25px 190px 25px 0px;
+            font-size: 1em;
+        }
+
+        .caja .texto1{
+            font-size: 0.87em;
+        }
+
+        .caja .titulo{
+            font-size: 1.4em;
+        }
+
+        .caja .texto2{
+            font-size: 1.03em;
+            padding-bottom: 30px;
+        }
+
+        .c1 .texto3{
+            font-size: 1em;
+        }
+
+
+}
